@@ -6,6 +6,8 @@
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+
+            this.MenuItem_EXIT.Click += (o, e) => this.Close();
         }
     }
 }
