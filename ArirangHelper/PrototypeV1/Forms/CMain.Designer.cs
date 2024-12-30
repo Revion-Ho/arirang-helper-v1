@@ -33,12 +33,14 @@
             MenuItem_EXIT = new ToolStripMenuItem();
             panel_Container = new Panel();
             statusStrip1 = new StatusStrip();
+            MenuItem_Functions = new ToolStripMenuItem();
+            MenuItem_AddAlarm = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { 프로그램ToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { 프로그램ToolStripMenuItem, MenuItem_Functions });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1097, 24);
@@ -73,6 +75,19 @@
             statusStrip1.Size = new Size(1097, 22);
             statusStrip1.TabIndex = 2;
             // 
+            // MenuItem_Functions
+            // 
+            MenuItem_Functions.DropDownItems.AddRange(new ToolStripItem[] { MenuItem_AddAlarm });
+            MenuItem_Functions.Name = "MenuItem_Functions";
+            MenuItem_Functions.Size = new Size(43, 20);
+            MenuItem_Functions.Text = "기능";
+            // 
+            // MenuItem_AddAlarm
+            // 
+            MenuItem_AddAlarm.Name = "MenuItem_AddAlarm";
+            MenuItem_AddAlarm.Size = new Size(180, 22);
+            MenuItem_AddAlarm.Text = "알람 추가";
+            // 
             // CMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -98,5 +113,7 @@
         private ToolStripMenuItem MenuItem_EXIT;
         private Panel panel_Container;
         private StatusStrip statusStrip1;
+        private ToolStripMenuItem MenuItem_Functions;
+        private ToolStripMenuItem MenuItem_AddAlarm;
     }
 }
